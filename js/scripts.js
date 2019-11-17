@@ -1,8 +1,3 @@
-const divHam = document.querySelector(".hamburger"),
-      first = divHam.firstElementChild,
-      second = first.nextElementSibling,
-      third = second.nextElementSibling;
-
 (function() {
 
   function assignEvents(elems, type, func) {
@@ -41,10 +36,17 @@ window.animati0n = init;
 }())
 
 
+const divHam = document.querySelector(".hamburger"),
+      first = divHam.firstElementChild,
+      second = first.nextElementSibling,
+      third = second.nextElementSibling;
+
+// first.classList.add()
+
 divHam.addEventListener("click", function hamAnimation() {
 
   first.classList.toggle("firstAnimation");
-  second.classList.toggle("disabled");
+  second.classList.toggle("secondAnimation");
   third.classList.toggle("thirdAnimation");
 
 }, false)
