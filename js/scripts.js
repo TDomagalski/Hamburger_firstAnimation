@@ -39,3 +39,12 @@ const divHam = document.querySelector(".hamburger"),
 window.animati0n = init;
 
 }())
+
+
+divHam.addEventListener("click", function hamAnimation() {
+
+  first.classList.toggle("firstAnimation");
+  second.classList.toggle("disabled");
+  third.classList.toggle("thirdAnimation");
+
+}, false)

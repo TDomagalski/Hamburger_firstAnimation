@@ -1,5 +1,9 @@
 // @import "constantly";
 
+.disabled {
+  display: none!important;
+}
+
 .container {
   width: 80%;
   margin: 20px auto;
@@ -10,6 +14,7 @@
     height: 400px;
 
     .hamburger {
+      position: relative;
       width: 100%;
       height: 100%;
 
@@ -48,6 +53,22 @@
       }
       .third {
         background-color: red;
+      }
+
+
+      .firstAnimation {
+        position: absolute;
+        transform: rotate(45deg);
+        background-color: purple;
+        top: 34%;
+        transition: .3s ease-in-out;
+      }
+      .thirdAnimation {
+        position: absolute;
+        transform: rotate(-45deg);
+        background-color: red;
+        bottom: 33%;
+        transition: .3s ease-in-out;
       }
     }
   }
