@@ -41,8 +41,6 @@ const divHam = document.querySelector(".hamburger"),
       second = first.nextElementSibling,
       third = second.nextElementSibling;
 
-// first.classList.add()
-
 divHam.addEventListener("click", function hamAnimation() {
 
   first.classList.toggle("firstAnimation");
