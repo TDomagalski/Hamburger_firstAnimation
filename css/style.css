@@ -1,0 +1,107 @@
+.disabled {
+  display: none !important;
+}
+
+.container {
+  width: 80%;
+  margin: 20px auto;
+}
+
+.container .hamburgerDiv {
+  margin: auto;
+  width: 40%;
+  height: 400px;
+}
+
+.container .hamburgerDiv .hamburger {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.container .hamburgerDiv .hamburger :first-child {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  margin: 30px 0;
+  background-color: black;
+  border-radius: 25px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.container .hamburgerDiv .hamburger :nth-child(2) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -93%);
+          transform: translate(-50%, -93%);
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  margin: 30px 0;
+  background-color: black;
+  border-radius: 25px;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.container .hamburgerDiv .hamburger :last-child {
+  position: absolute;
+  bottom: 0;
+  display: inline-block;
+  width: 100%;
+  height: 70px;
+  margin: 30px 0;
+  background-color: black;
+  border-radius: 25px;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.container .hamburgerDiv .hamburger .first {
+  background-color: red;
+}
+
+.container .hamburgerDiv .hamburger .second {
+  background-color: green;
+}
+
+.container .hamburgerDiv .hamburger .third {
+  background-color: blue;
+}
+
+.container .hamburgerDiv .hamburger .firstAnimation {
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: red;
+  top: 34%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.container .hamburgerDiv .hamburger .secondAnimation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -93%);
+          transform: translate(-50%, -93%);
+  opacity: 0;
+  -webkit-transition: .1s ease-in-out;
+  transition: .1s ease-in-out;
+}
+
+.container .hamburgerDiv .hamburger .thirdAnimation {
+  position: absolute;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  background-color: blue;
+  bottom: 33%;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+/*# sourceMappingURL=style.css.map */
